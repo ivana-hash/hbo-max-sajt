@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>HBO Max</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <div class="logo">
+          <a id="logo" href="index.html">
+            <img src="./img/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="menu-links">
+          <a href="registracija.html">Registracija</a>
+          <a href="serije.html">Serije</a>
+          <a href="filmovi.html">Filmovi</a>
+          <a href="index.html">Pocetna</a>
+          <a href="javascript:void(0);" class="icon" onclick="menu()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="faq contact">
+        <div class="container">
+          <h1 class="">Napravi nalog</h1>
+          <div class="row">
+            <form id="kontakt-forma">
+              <div class="row">
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Ime"
+                />
+
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Prezime"
+                />
+              </div>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email adresa"
+              />
+              <input
+                type="email"
+                id="emailPotvrda"
+                name="email"
+                placeholder="Potvrdi email adresu"
+              />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Lozinka"
+              />
+              <div class="row row-checkbox">
+                <input type="checkbox" name="uslovi" id="uslovi" />
+                <label id="uslovi-lbl" for="uslovi"
+                  >Saglasan sam sa uslovima koriscenja</label
+                >
+              </div>
+              <div class="row btn-submit">
+                <input
+                  id="contact-submit"
+                  type="submit"
+                  value="Napravi nalog"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
